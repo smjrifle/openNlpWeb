@@ -1,0 +1,5 @@
+Add openNlp's lib files to the user libraries for compilation
+Add openNlp's  lib file to the server to run on server
+
+Set the path of the modules in processText.java file for your case ...
+
