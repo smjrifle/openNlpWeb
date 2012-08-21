@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE shoe SYSTEM
+ "http://www.cs.umd.edu/projects/plus/SHOE/shoe_xml.dtd">
+ <shoe version="1.0">
+ </shoe>
