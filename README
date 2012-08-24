@@ -1,5 +1,7 @@
-Add openNlp's lib files to the user libraries for compilation
-Add openNlp's  lib file to the server to run on server
+Trying out Natural language processing. 
 
-Set the path of the modules in processText.java file for your case ...
+The documentation of this project is the file named Documentation.odt 
 
+
+The Nepali Proccessing is done using nepali-nlp.jar library. The source code for this library is at:
+https://github.com/opnchaudhary/NepaLP
