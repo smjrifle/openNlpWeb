@@ -60,27 +60,10 @@ public class PredicateLogic {
 		String[] tokens = tokenizer.tokenize(s);
 
 		POSTaggerME posTagger = new POSTaggerME(modelPOS);
-		
-		
-		for (int tempVar = 0; tempVar < tokens.length; tempVar++) {			
-			String temp=posTagger.tag(tokens[tempVar]);
-			String[] temps=temp.split(" ");
 			
-			for(int i=0;i<temps.length;i++){
-				String[] t=temps[i].split("/");
-				if(t[1].equals("NN")||t[1].equals("NNS")||t[1].equals("NNP")||t[1].equals("NNPS")||t[1].equals("FW")||t[1].equals("JJ")||t[1].equals("VB")||t[1].equals("VBD")||t[1].equals("VBN")||t[1].equals("VBZ")){
-					if(t[1].equals("NNS")){
-						//
-					}
-				}
-			}
-		}
-		
-		
-		
 		/*
-		 * This works to some extent but the  one above is supposed to be  a better imlementation
-		 * 
+		 * This works to some extent.
+		 */
 		String consts=null;
 		String attr=null;
 		String consts1=null;
@@ -114,12 +97,8 @@ public class PredicateLogic {
 			
 			
 		}
-		sent.append(attr+"("+consts+","+consts1+")");
-		*/
+		sent.append(attr+"("+consts+","+consts1+")");		
 		
 		return sent.toString();		
 	}
 }
-
-
-
