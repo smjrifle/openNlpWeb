@@ -78,45 +78,7 @@ public class PredicateLogic {
 		
 		
 		
-		/*
-		 * This works to some extent but the  one above is supposed to be  a better imlementation
-		 * 
-		String consts=null;
-		String attr=null;
-		String consts1=null;
-		int count=0;
-		for (int tempVar = 0; tempVar < tokens.length; tempVar++) {			
-			String temp=posTagger.tag(tokens[tempVar]);
-			String[] temps=temp.split(" ");			
-			for(int i=0;i<temps.length;i++){
-				String[] t=temps[i].split("/");
-				if(t[1].equals("NN")||t[1].equals("NNS")||t[1].equals("NNP")||t[1].equals("NNPS")||t[1].equals("FW")){					
-					count++;
-					if(count==1){
-						consts=t[0];
-						break;
-					}
-				}
-			}
-			
-			for(int i=0;i<temps.length;i++){
-				String[] t=temps[i].split("/");
-				if(t[1].equals("VB")||t[1].equals("VBD")||t[1].equals("VBN")||t[1].equals("VBZ")){
-					attr=t[0];
-				}
-			}
-			for(int i=0;i<temps.length;i++){
-				String[] t=temps[i].split("/");
-				if(t[1].equals("NN")||t[1].equals("NNS")||t[1].equals("NNP")||t[1].equals("NNPS")||t[1].equals("FW")||t[1].equals("JJ")){					
-					consts1=t[0];
-				}
-			}
-			
-			
-		}
-		sent.append(attr+"("+consts+","+consts1+")");
-		*/
-		
+				
 		return sent.toString();		
 	}
 }
