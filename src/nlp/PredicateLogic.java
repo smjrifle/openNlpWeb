@@ -62,7 +62,8 @@ public class PredicateLogic {
 		POSTaggerME posTagger = new POSTaggerME(modelPOS);
 			
 		/*
-		 * This works to some extent.
+		 * This works to some extent. The logic behind this is to take out verb out of the sentence as attribute of the subject of the sentence
+		 * to form a predicate with object of the sentece as the second parameter in the predicate
 		 */
 		String consts=null;
 		String attr=null;
